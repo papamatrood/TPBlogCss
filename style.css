@@ -1,0 +1,205 @@
+﻿
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*******************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: floralwhite;
+    padding: 15px 15%;
+}
+
+.logo {
+    font-size: 36px;
+    color: #bfbf9f;
+    text-align: left;
+    font-weight: 600;
+    padding: 5px 0px 10px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.navbar-nav {
+    line-height: 50px;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    color: #bfbf9f;
+    padding: 2rem;
+    transition: color .3s;
+}
+
+.navbar-nav a.active,
+.navbar-nav a:hover {    
+    color: #000;
+}
+
+.reseaux-sociaux {
+    line-height: 61px;
+}
+
+.reseaux-sociaux span {
+    display: inline-block;
+    margin: 0px 5px;
+}
+
+.facebook img {
+    width: 23px;
+    height: auto;
+}
+
+.twitter img {
+    width: 23px;
+    height: auto;
+}
+
+.main {
+    width: calc(100% - 30%);
+    margin: 0 auto 70px;
+}
+
+.banniere {
+    background-image: url('bamako.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 17%;
+    height: 18rem;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    width: 80%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+
+.article {
+    clear: both;
+    padding: 3rem 0 0;
+}
+
+.image-article {
+    float: left;
+    width: 18rem;
+    height: auto;
+    margin-right: 2%;
+    perspective: 500px;
+    transition: transform .3s;
+}
+
+.image-article:hover {
+    transform: rotateY(10deg)
+}
+
+.date-publication {
+    color: #bfbf9f;
+    font-size: 17px;
+}
+
+.titre-article {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: .7rem 0;
+}
+
+.article p {
+    font-size: 1.2rem;
+    line-height: 1.29;
+    text-align: justify;
+    display: flex;
+}
+
+.aside {
+    width: 20%;
+    background-color: #f1f1f1;
+    padding: 3rem 1rem 0;
+}
+
+.aside h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 1.5rem auto;
+}
+
+.aside .categories:first-child h3{
+    margin-top: 0;
+}
+
+.categories {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #ccc;
+}
+
+.categories:last-child {
+    padding-bottom: 0;
+    border-bottom: 0px solid #ccc;
+}
+
+.categories li {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    color: #8e8e8e;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color .3s;
+}
+
+.categories li:hover {
+    color: black;
+}
